@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias Junior | Portfólio</title>
+    <meta name="description" content="Portfólio profissional de Elias Junior Cunha - Desenvolvedor Full Stack e Engenheiro Civil">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ==================== CABEÇALHO ==================== -->
+    <header id="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Elias<span>Junior</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                &#9776;
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ==================== SEÇÃO HERO ==================== -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <p class="hero-greeting">Olá, eu sou</p>
+                <h1>Elias Junior Cunha</h1>
+                <p class="hero-title">Desenvolvedor Full Stack</p>
+                <p class="hero-description">
+                    Especializado em criar soluções modernas e eficientes para o seu negócio.
+                    Apaixonado por engenharia e resolução de problemas.
+                </p>
+                <div class="hero-techs">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Next.Js</span>
+                    <span class="tech-badge">NodeJS</span>
+                    <span class="tech-badge">VBA</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-secondary">Contato</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO SOBRE ==================== -->
+        <section id="sobre" class="sobre-section">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="sobre-content">
+                    <div class="sobre-avatar">
+                        <div class="avatar-placeholder">EJ</div>
+                    </div>
+                    <div class="sobre-texto">
+                        <p>
+                            Sou <strong>Elias Junior Cunha</strong>, Desenvolvedor Full Stack e
+                            Engenheiro Civil. Atuo com desenvolvimento web utilizando React, Next.js,
+                            Node.js e TypeScript, além de soluções desktop em VBA com integração a bancos
+                            de dados SQLite e MySQL.
+                        </p>
+                        <p>
+                            Tenho experiência em projetos de engenharia, sistemas de gestão empresarial
+                            e aplicações web, sempre buscando entregar soluções que combinam eficiência
+                            técnica e usabilidade.
+                        </p>
+                        <div class="skills-container">
+                            <h3>Habilidades</h3>
+                            <div class="skills-grid">
+                                <div class="skill-group">
+                                    <h4>Frontend</h4>
+                                    <div class="skill-tags">
+                                        <span>React</span>
+                                        <span>Next.js</span>
+                                        <span>Angular</span>
+                                        <span>TypeScript</span>
+                                        <span>JavaScript</span>
+                                        <span>CSS/SASS</span>
+                                        <span>HTML5</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <h4>Backend / Linguagens</h4>
+                                    <div class="skill-tags">
+                                        <span>Node.js</span>
+                                        <span>Express</span>
+                                        <span>Python</span>
+                                        <span>SQL</span>
+                                        <span>NoSQL</span>
+                                        <span>VBA</span>
+                                        <span>C#</span>
+                                        <span>MongoDB</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <h4>Ferramentas</h4>
+                                    <div class="skill-tags">
+                                        <span>Git</span>
+                                        <span>Docker</span>
+                                        <span>Figma</span>
+                                        <span>Jest</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO PROJETOS ==================== -->
+        <section id="projetos" class="projetos-section">
+            <div class="container">
+                <h2 class="section-title">Meus Projetos</h2>
+                <p class="section-subtitle">Conheça alguns dos projetos que desenvolvi</p>
+
+                <!-- Filtros -->
+                <div class="filtros" id="filtros">
+                    <button class="filtro-btn active" data-filtro="todos">Todos</button>
+                    <button class="filtro-btn" data-filtro="web">Web</button>
+                    <button class="filtro-btn" data-filtro="desktop">Desktop</button>
+                </div>
+
+                <!-- Container dos cards - preenchido via JavaScript -->
+                <div id="projetos-container" class="projetos-grid">
+                    <!-- Cards renderizados dinamicamente pelo script.js -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== RODAPÉ / CONTATO ==================== -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <h2 class="section-title section-title-light">Contato</h2>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>Interessado em trabalhar juntos? Entre em contato!</p>
+                    <ul class="contact-list">
+                        <li>
+                            <strong>Email:</strong>
+                            <a href="mailto:engeliascunha@gmail.com">engeliascunha@gmail.com</a>
+                        </li>
+                        <li>
+                            <strong>Telefone:</strong>
+                            <a href="tel:+5586999930217">(86) 99993-0217</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/EliaJunior" target="_blank" rel="noopener noreferrer" class="social-link">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/elias-junior-b45335174/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elias Junior Cunha. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
